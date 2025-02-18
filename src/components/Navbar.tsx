@@ -10,9 +10,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav id="navbar" className="fixed top-0 left-0 right-0 bg-transparent z-50">
+    <nav id="navbar" className="absolute top-0 left-0 right-0 bg-transparent z-50">
       <div className="mx-10 md:px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-around h-20">
           <div className="flex items-center">
             <a href="#home" className="text-2xl font-bold text-primary">
               <img src="/LogoPawwer.png" alt="Logo Pawwer" className="h-12" />
@@ -47,7 +47,7 @@ const Navbar = () => {
             <Button
               variant="default"
               size="lg"
-              className="bg-[#000000] hover:bg-[#444444] text-white font-bold px-4 py-2 rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-xl"
+              className="bg-[#000000] hover:bg-[#444444] text-white font-bold px-4 py-2 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-xl"
             >
               Contactanos
             </Button>

@@ -32,7 +32,7 @@ const Hero = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-[#000000] hover:bg-[#444444] text-white px-8 py-6 text-lg rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
+                  className="bg-[#000000] hover:bg-[#444444] text-white px-8 py-6 text-lg rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
                 >
                   <MessageSquare className="h-5 w-5 mr-2" />
                   Contactanos

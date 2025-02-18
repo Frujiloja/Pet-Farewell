@@ -1,10 +1,16 @@
 const Footer = () => {
   return (
-    <footer className="bg-secondary text-white py-12">
+    <footer className="bg-[#04603B] text-white py-12">
+      <div className="absolute bottom-0 left-0 w-full h-1/5 bg-gradient-to-t from-white to-transparent"></div>
+
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="text-center md:text-left">
-            <img src="/logoLuddenB.png" alt="Logo Ludden" className="mx-auto md:mx-0 ml-3" />
+            <img
+              src="/logoLuddenB.png"
+              alt="Logo Ludden"
+              className="mx-auto md:mx-0 ml-3"
+            />
             <p className="text-gray-400 mt-4">
               Transformando ideas en experiencias digitales excepcionales
             </p>
@@ -33,7 +39,10 @@ const Footer = () => {
             <h4 className="font-bold mb-4">Empresa</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#highlights" className="text-gray-400 hover:text-white">
+                <a
+                  href="#highlights"
+                  className="text-gray-400 hover:text-white"
+                >
                   Sobre Nosotros
                 </a>
               </li>
@@ -53,9 +62,7 @@ const Footer = () => {
             <h4 className="font-bold mb-4">Contacto</h4>
             <ul className="space-y-2">
               <li className="text-gray-400">ludden@gmail.com</li>
-              <li className="text-gray-400">
-                Buenos Aires, Argentina
-              </li>
+              <li className="text-gray-400">Buenos Aires, Argentina</li>
             </ul>
           </div>
         </div>

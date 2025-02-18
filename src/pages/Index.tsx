@@ -7,6 +7,9 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Servicios from "@/components/Servicios";
 import VerticalCarousel from "@/components/Carrousel";
+import Sumate from "@/components/Sumate";
+import GoogleMapComponent from "@/components/Map";
+import DogBanner from "@/components/DogBanner";
 
 const Index = () => {
   return (
@@ -18,6 +21,9 @@ const Index = () => {
       <Partners />
       <CatBanner />
       <CollageComponent />
+      <Sumate />
+      <GoogleMapComponent />
+      <DogBanner />
       <FAQ />
       <Footer />
       <a

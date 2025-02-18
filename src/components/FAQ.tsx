@@ -7,16 +7,16 @@ import {
 
 const faqs = [
   {
-    question: "¿Qué servicios de desarrollo web ofrecen?",
-    answer: "Ofrecemos desarrollo web full-stack, diseño UI/UX, optimización SEO y mantenimiento web.",
+    question: "¿Qué es (nombre de empresa)?",
+    answer: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
   },
   {
-    question: "¿Cuál es el tiempo promedio de desarrollo?",
-    answer: "El tiempo varía según el proyecto, pero típicamente entre 4-8 semanas para sitios web completos.",
+    question: "¿Comó hago para adquirir el servicio?",
+    answer: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
   },
   {
-    question: "¿Ofrecen soporte post-lanzamiento?",
-    answer: "Sí, ofrecemos planes de mantenimiento y soporte continuo para todos nuestros proyectos.",
+    question: "¿Cuanto dura el servicio?",
+    answer: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
   },
 ];
 
