@@ -27,7 +27,7 @@ const Index = () => {
       <FAQ />
       <Footer />
       <a
-        href="https://wa.me/+541157719725" // Reemplaza con tu número de WhatsApp
+        href="https://wa.me/+541168961470" // Reemplaza con tu número de WhatsApp
         className="fixed bottom-8 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg z-30"
         target="_blank"
         rel="noopener noreferrer"

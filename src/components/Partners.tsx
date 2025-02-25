@@ -15,7 +15,7 @@ const Partners = () => {
       </div>
       <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
         <a
-          href="https://wa.me/+541157719725"
+          href="https://wa.me/+541168961470"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -23,7 +23,7 @@ const Partners = () => {
             size="lg"
             className="bg-[#000000] hover:bg-[#444444] text-white px-8 py-6 text-lg rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
           >
-            Hablar con un asesor
+            Contactanos
           </Button>
         </a>
       </div>

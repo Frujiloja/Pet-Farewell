@@ -43,26 +43,37 @@ export default function VerticalCarousel() {
   }, []);
 
   return (
-    <div className="relative w-full h-[80vh] overflow-hidden flex items-center justify-center">
-      <div className="absolute inset-0 bg-cover bg-center transition-all duration-500" style={{ backgroundImage: `url(${slides[currentIndex].image})` }}></div>
-      
+    <div className="relative w-full h-[60vh] sm:h-[80vh] overflow-hidden flex items-center justify-center">
+      {/* Fondo de la imagen */}
+      <div
+        className="absolute inset-0 bg-cover bg-center transition-all duration-500"
+        style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
+      ></div>
+
+      {/* Contenido del slide */}
       <motion.div
         key={currentIndex}
         initial={{ y: "100%", opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: "-100%", opacity: 0 }}
         transition={{ duration: 0.8 }}
-        className={`relative z-10 ${slides[currentIndex].bgColor} text-white p-6 rounded-lg w-1/4 text-center flex justify-center`}
+        className={`relative z-10 ${slides[currentIndex].bgColor} text-white p-4 sm:p-6 rounded-lg w-4/5 sm:w-1/4 text-center flex justify-center`}
       >
-        <div className="absolute top-2 left-2 text-white px-2 py-1 rounded font-bold">{slides[currentIndex].id}</div>
-        <p className="text-lg w-80">{slides[currentIndex].text}</p>
-      </motion.div>
-      
-      <div className="absolute right-5 flex flex-col gap-2 top-1/2 transform -translate-y-1/2">
+                <div className="absolute top-2 left-2 text-white px-2 py-1 rounded font-bold text-sm sm:text-base">
+          {slides[currentIndex].id}
+        </div>
+        <p className="text-sm sm:text-lg w-full sm:w-80 mt-4 sm:mt-0">
+          {slides[currentIndex].text}
+        </p>    </motion.div>
+
+      {/* Botones de navegación */}
+      <div className="absolute right-2 sm:right-5 flex flex-col gap-2 top-1/2 transform -translate-y-1/2">
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full transition-all ${index === currentIndex ? "bg-yellow-500" : "bg-white"}`}
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all ${
+              index === currentIndex ? "bg-yellow-500" : "bg-white"
+            }`}
             onClick={() => setCurrentIndex(index)}
           />
         ))}

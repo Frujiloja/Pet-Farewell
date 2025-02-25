@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#04603B] text-white py-12 relative">
+    <footer className="bg-[#04603B] text-white mt-8 py-12 relative">
       <div className="absolute inset-0 bg-gradient-to-t from-[#04603B] to-white h-40"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
@@ -32,13 +32,13 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex justify-end h-10">
+          <div className="flex justify-center sm:justify-end h-10">
             <img src="/LogoPawwerB.png" alt="" />
           </div>
         </div>
         <div className="border-t border-gray-300 mt-12 pt-8 text-center text-gray-300">
           <p>&copy; 2025 Pawwer. Todos los derechos reservados.</p>
-          <p className="text-sm text-gray-400"> Powered by Ludden</p>
+          <p className="text-xs text-gray-400"> Powered by Ludden</p>
         </div>
       </div>
     </footer>

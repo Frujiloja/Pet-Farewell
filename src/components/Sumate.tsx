@@ -21,41 +21,42 @@ const highlights = [
 const Sumate = () => {
   return (
     <section
-      className="h-[70vh] bg-white flex justify-center mt-20"
+      className="h-auto bg-white flex justify-center mt-10 sm:mt-20 px-4"
       id="servicios"
     >
-      <div className="text-center w-[70vw]">
-        <h2 className="text-2xl md:text-4xl font-bold mb-12 mx-60">
-          ¡Súmate a nuestro equipo!{" "}
+      <div className="text-center w-full sm:w-[70vw]">
+        <h2 className="text-xl sm:text-2xl md:text-4xl font-bold mb-6 sm:mb-12 mx-auto">
+          ¡Súmate a nuestro equipo!
         </h2>
-        <h3 className="mx-60">
+        <h3 className="text-sm sm:text-base mx-auto sm:mx-60">
           Si sos veterinario, distribuidor o tenés un local relacionado con el
           cuidado de mascotas, te invitamos a formar parte de nuestro programa
           de distribución. Ofrecé a tus clientes una opción para despedir a sus
           mascotas.
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-20 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mt-10 sm:mt-20 mb-10 sm:mb-20">
           {highlights.map((highlight, index) => (
             <div key={index} className="text-center">
               <img
                 src={highlight.image}
                 alt={highlight.title}
-                className="mx-auto mb-4 w-[18vh] object-cover rounded-lg"
+                className="mx-auto mb-4 w-[12vh] sm:w-[18vh] object-cover rounded-lg"
               />
-              <h3 className="font-semibold">{highlight.title}</h3>
+              <h3 className="font-semibold text-sm sm:text-base">
+                {highlight.title}
+              </h3>
             </div>
           ))}
         </div>
         <a
-          href="https://wa.me/+541157719725"
+          href="https://wa.me/+541168961470"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Button
             size="lg"
-            className="bg-[#000000] hover:bg-[#444444] text-white px-8 py-6 text-lg rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
+            className="bg-[#000000] hover:bg-[#444444] text-white px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-lg rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
           >
-            {" "}
             Contactanos
           </Button>
         </a>

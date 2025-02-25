@@ -18,25 +18,37 @@ const highlights = [
 
 const Servicios = () => {
   return (
-    <section className="h-[70vh] bg-white flex justify-center" id="servicios">
-      <div className="text-center w-[70vw]">
-        <h2 className="text-2xl md:text-4xl font-bold mb-12 mx-60">
-          Nos encargamos de todo para que su despedida sea solo amor{" "}
+    <section
+      className="h-auto bg-white flex justify-center px-4 sm:px-8 mb-10"
+      id="servicios"
+    >
+      <div className="text-center w-full sm:w-[90vw] md:w-[70vw]">
+        {/* Título principal */}
+        <h2 className="text-xl sm:text-2xl md:text-4xl font-bold mb-6 sm:mb-12 mx-4 sm:mx-20">
+          Nos encargamos de todo para que su despedida sea solo amor
         </h2>
-        <h3 className="mx-60">
+
+        {/* Subtítulo */}
+        <h3 className="text-sm sm:text-base mx-4 sm:mx-20">
           Queremos que este momento sea tranquilo para vos. Llevamos un ataúd
           según el tamaño de tu mascota y cavamos el pozo en tu jardín. Rápido,
           simple y sin que tengas que preocuparte por nada.
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-20">
+
+        {/* Cuadrícula de destacados */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mt-10 sm:mt-20">
           {highlights.map((highlight, index) => (
             <div key={index} className="text-center">
+              {/* Imagen */}
               <img
                 src={highlight.image}
                 alt={highlight.title}
-                className="mx-auto mb-4 w-[18vh] object-cover rounded-lg"
+                className="mx-auto mb-4 w-[12vh] sm:w-[16vh] md:w-[18vh] object-cover rounded-lg"
               />
-              <h3 className="font-semibold">{highlight.title}</h3>
+              {/* Título del destacado */}
+              <h3 className="text-sm sm:text-base font-semibold">
+                {highlight.title}
+              </h3>
             </div>
           ))}
         </div>

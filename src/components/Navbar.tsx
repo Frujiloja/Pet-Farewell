@@ -10,12 +10,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav id="navbar" className="absolute top-0 left-0 right-0 bg-transparent z-50">
-      <div className="mx-10 md:px-4">
+    <nav
+      id="navbar"
+      className="absolute top-0 left-0 right-0 bg-transparent z-50"
+    >
+      <div className="sm:mx-10 md:px-4">
         <div className="flex items-center justify-around h-20">
           <div className="flex items-center">
             <a href="#home" className="text-2xl font-bold text-primary">
-              <img src="/LogoPawwer.png" alt="Logo Pawwer" className="h-12" />
+              <img
+                src="/LogoPawwer.png"
+                alt="Logo Pawwer"
+                className="h-[4vh] sm:h-[4vh]"
+              />
             </a>
           </div>
 
@@ -53,50 +60,61 @@ const Navbar = () => {
             </Button>
           </div>
 
-          <div className="md:hidden flex items-center pr-4 pt-4">
-            <button onClick={toggleMenu} className="text-[#6137e7]">
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          <div className="md:hidden flex items-center pr-4">
+            <button onClick={toggleMenu} className="text-[#ffffff] ">
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-10 w-10" />
+              )}
             </button>
           </div>
         </div>
 
         {isOpen && (
-          <div className="md:hidden flex flex-col items-center space-y-4 mt-4 mb-4">
+          <div className="md:hidden mx-8 flex flex-col items-center space-y-4 mb-4 bg-white rounded-lg shadow-lg p-4 transition-all duration-300">
             <a
               href="#servicios"
-              className="text-[#6137e7] hover:text-[#a137e7] font-bold text-xl"
               onClick={toggleMenu}
+              className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105 text-xl"
             >
               Servicios
             </a>
             <a
               href="#testimonios"
-              className="text-[#6137e7] hover:text-[#a137e7] font-bold text-xl"
               onClick={toggleMenu}
+              className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105 text-xl"
             >
-              Testimonios
+              Producto
             </a>
             <a
-                href="https://wa.me/+541157719725"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-            <Button
-              variant="default"
-              size="lg"
-              className="bg-[#6137e7] hover:bg-[#a137e7] text-white font-bold px-4 py-2 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-xl"
+              href="#testimonios"
               onClick={toggleMenu}
+              className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105 text-xl"
             >
-              Contactar
-            </Button>
-              </a>
-            {/* <div className="flex items-center space-x-2">
-              <Globe className="h-4 w-4" />
-              <select className="bg-transparent border-none text-sm">
-                <option value="es">ES</option>
-                <option value="en">EN</option>
-              </select>
-            </div> */}
+              Súmate al equipo
+            </a>
+            <a
+              href="#testimonios"
+              onClick={toggleMenu}
+              className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105 text-xl"
+            >
+              Preguntas
+            </a>
+            <a
+              href="https://wa.me/+541168961470"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="default"
+                size="lg"
+                className="bg-[#6f4b2c] hover:bg-[#966a43] text-white font-bold px-4 py-2 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-xl"
+                onClick={toggleMenu}
+              >
+                Contactar
+              </Button>
+            </a>
           </div>
         )}
       </div>
