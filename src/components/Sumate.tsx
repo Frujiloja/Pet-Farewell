@@ -22,7 +22,7 @@ const Sumate = () => {
   return (
     <section
       className="h-auto bg-white flex justify-center mt-10 sm:mt-20 px-4"
-      id="servicios"
+      id="sumate"
     >
       <div className="text-center w-full sm:w-[70vw]">
         <h2 className="text-xl sm:text-2xl md:text-4xl font-bold mb-6 sm:mb-12 mx-auto">

@@ -34,19 +34,19 @@ const Navbar = () => {
               Servicios
             </a>
             <a
-              href="#testimonios"
+              href="#collage"
               className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105  text-xl"
             >
               Producto
             </a>
             <a
-              href="#testimonios"
+              href="#sumate"
               className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105  text-xl"
             >
               Súmate al equipo
             </a>
             <a
-              href="#testimonios"
+              href="#faq"
               className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105 text-xl"
             >
               Preguntas
@@ -81,21 +81,21 @@ const Navbar = () => {
               Servicios
             </a>
             <a
-              href="#testimonios"
+              href="#collage"
               onClick={toggleMenu}
               className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105 text-xl"
             >
               Producto
             </a>
             <a
-              href="#testimonios"
+              href="#sumate"
               onClick={toggleMenu}
               className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105 text-xl"
             >
               Súmate al equipo
             </a>
             <a
-              href="#testimonios"
+              href="#faq"
               onClick={toggleMenu}
               className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105 text-xl"
             >

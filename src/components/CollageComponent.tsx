@@ -22,7 +22,7 @@ const CollageComponent = () => {
   };
 
   return (
-    <section className="w-full text-center p-8 pt-20">
+    <section className="w-full text-center p-8 pt-20" id="collage">
       <div className="container mx-auto px-4 mb-10">
         <h2 className="text-2xl md:text-4xl font-bold mb-8 mx-auto">
           Ataúdes biodegradables
