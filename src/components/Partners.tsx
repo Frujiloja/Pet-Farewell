@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 
 const Partners = () => {
   return (
-    <section className="flex flex-col items-center justify-center py-20 bg-muted text-center">
+    <section className="sm:flex flex-col h-[70vh] items-center justify-center py-20 bg-muted sm:text-center">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-4xl font-bold mb-8 max-w-md mx-auto">
+        <h2 className="text-4xl md:text-4xl font-bold mb-8 max-w-md mx-auto">
           Despedilo con amor, sin complicaciones
         </h2>
-        <h3 className="max-w-3xl mx-auto font-light">
+        <h3 className="max-w-3xl text-[24px] sm:text-2xl mx-auto font-light">
           Nos contactás por WhatsApp y en el mismo día llegamos a tu casa para
           organizar todo. Un servicio rápido y respetuoso, para que puedas
           despedir a tu mascota con tranquilidad y sin preocupaciones.
@@ -21,7 +21,7 @@ const Partners = () => {
         >
           <Button
             size="lg"
-            className="bg-[#000000] hover:bg-[#444444] text-white px-8 py-6 text-lg rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
+            className="bg-[#000000] hover:bg-[#444444] text-white ml-4 px-6 sm:px-8 lg:px-12 py-4 sm:py-6 lg:py-8 text-xl sm:text-lg lg:text-xl rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
           >
             Contactanos
           </Button>
@@ -30,6 +30,5 @@ const Partners = () => {
     </section>
   );
 };
-
 
 export default Partners;

@@ -16,19 +16,19 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen p-6 sm:p-10">
-        <div className="container mx-auto px-4 text-center md:text-left flex flex-col md:flex-row items-center">
+      <div className="relative z-10 flex items-center justify-center min-h-screen p-6 sm:p-10 sm:mx-[8vw]">
+        <div className="container mx-auto px-2 text-left sm:text-center md:text-left flex flex-col md:flex-row items-center">
           <div className="max-w-4xl space-y-6 sm:space-y-8 md:w-1/2">
-            <div>
+            <div className="pb-40 sm:pb-0">
               {/* Títulos ajustados para móviles */}
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              <h1 className="text-6xl sm:text-5xl md:text-5xl lg:text-7xl font-light leading-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                 Un adios
               </h1>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                lleno de amor
+              <h2 className="text-6xl sm:text-5xl md:text-5xl lg:text-[4.5vw] font-bold leading-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                lleno de amor.
               </h2>
               {/* Párrafo ajustado */}
-              <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl">
+              <p className="text-lg sm:text-xl md:text-xl lg:text-[1.5vw] text-gray-300 max-w-2xl">
                 Te ofrecemos un servicio de entierro en casa, para que puedas
                 despedir a tu mascota de la mejor manera
               </p>
@@ -42,9 +42,9 @@ const Hero = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-[#000000] hover:bg-[#444444] text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
+                  className="bg-[#000000] hover:bg-[#444444] text-white px-6 sm:px-8 lg:px-12 py-4 sm:py-6 lg:py-8 text-base sm:text-lg lg:text-xl rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
                 >
-                  <MessageSquare className="h-5 w-5 mr-2" />
+                  <MessageSquare className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 mr-2" />
                   Contactanos
                 </Button>
               </a>

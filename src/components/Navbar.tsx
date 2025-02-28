@@ -14,7 +14,7 @@ const Navbar = () => {
       id="navbar"
       className="absolute top-0 left-0 right-0 bg-transparent z-50"
     >
-      <div className="sm:mx-10 md:px-4">
+      <div className="sm:mx-[4vw]">
         <div className="flex items-center justify-around h-20">
           <div className="flex items-center">
             <a href="#home" className="text-2xl font-bold text-primary">

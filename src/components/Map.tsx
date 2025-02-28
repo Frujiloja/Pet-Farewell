@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 
 const GoogleMapComponent = () => {
   return (
-    <div className="text-center my-6 sm:my-10 px-4">
-      <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 sm:mb-6">
+    <div className="text-center h-[130vh] pt-16 my-6 sm:my-10 px-4">
+      <h2 className="text-3xl text-left sm:text-center sm:text-3xl font-bold text-gray-800 mb-4 sm:mb-6">
         Cerca tuyo cuando más nos necesitás
       </h2>
 
@@ -18,7 +18,7 @@ const GoogleMapComponent = () => {
         </div>
       </div>
 
-      <h3 className="text-base sm:text-xl text-gray-600 mt-4 sm:mt-6 mx-auto sm:mx-80">
+      <h3 className="text-xl text-left sm:text-center sm:text-[1.5rem] text-gray-600 mt-4 sm:mt-6 mx-auto sm:mx-80">
         Nuestra base está en Buenos Aires, lo que nos permite llegar a tu hogar
         de manera rápida y eficiente. En este momento difícil, nos encargamos de
         todo para que no tengas que preocuparte por nada.
@@ -31,7 +31,7 @@ const GoogleMapComponent = () => {
         >
           <Button
             size="lg"
-            className="bg-[#000000] hover:bg-[#444444] text-white px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-lg rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
+            className="bg-[#000000] hover:bg-[#444444] text-white px-6 sm:px-8 py-4 sm:py-6 text-xl sm:text-lg rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
           >
             Hablar con un asesor
           </Button>

@@ -22,12 +22,12 @@ const CollageComponent = () => {
   };
 
   return (
-    <section className="w-full text-center p-8 pt-20" id="collage">
+    <section className="w-full sm:text-center p-8 pt-40" id="collage">
       <div className="container mx-auto px-4 mb-10">
-        <h2 className="text-2xl md:text-4xl font-bold mb-8 mx-auto">
+        <h2 className="text-4xl md:text-4xl font-bold mb-8 mx-auto">
           Ataúdes biodegradables
         </h2>
-        <h3 className="max-w-4xl mx-auto font-light">
+        <h3 className="max-w-4xl text-[22px] mx-auto font-light">
           Nuestro ataúd biodegradable, hecho de cartón ecológico, es resistente
           y soporta hasta 100 kg. Al mismo tiempo, se descompone de forma
           natural, contribuyendo al ciclo de la vida sin dejar huella en el
@@ -107,7 +107,7 @@ const CollageComponent = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+      <div className="flex flex-col sm:flex-row gap-4 justify-center pt-16">
         <a
           href="https://wa.me/+541168961470"
           target="_blank"
@@ -115,7 +115,7 @@ const CollageComponent = () => {
         >
           <Button
             size="lg"
-            className="bg-[#000000] hover:bg-[#444444] text-white px-8 py-6 text-lg rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
+            className="bg-[#000000] hover:bg-[#444444] w-full text-white px-8 py-6 text-xl rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold"
           >
             Hablar con un asesor
           </Button>
