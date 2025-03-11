@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Globe, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,8 +14,8 @@ const Navbar = () => {
       id="navbar"
       className="absolute top-0 left-0 right-0 bg-transparent z-50"
     >
-      <div className="sm:mx-[4vw]">
-        <div className="flex items-center justify-around h-20">
+      <div className="container mx-auto px-4 sm:px-10"> {/* Contenedor común */}
+        <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <a href="#home" className="text-2xl font-bold text-primary">
               <img

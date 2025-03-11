@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 
 const Partners = () => {
   return (
-    <section className="sm:flex flex-col h-[70vh] items-center justify-center py-20 bg-muted sm:text-center">
+    <section className="sm:flex flex-col h-[70vh] items-center justify-center py-20 bg-muted sm:text-center p-8">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-4xl font-bold mb-8 max-w-md mx-auto">
+      <h2 className="text-4xl md:text-4xl font-bold mb-8 mx-auto">
           Despedilo con amor, sin complicaciones
         </h2>
-        <h3 className="max-w-3xl text-[24px] sm:text-2xl mx-auto font-light">
+        <h3 className="max-w-4xl text-[22px] mx-auto font-light">
           Nos contactás por WhatsApp y en el mismo día llegamos a tu casa para
           organizar todo. Un servicio rápido y respetuoso, para que puedas
           despedir a tu mascota con tranquilidad y sin preocupaciones.

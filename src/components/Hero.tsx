@@ -16,19 +16,19 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen p-6 sm:p-10 sm:mx-[8vw]">
-        <div className="container mx-auto px-2 text-left sm:text-center md:text-left flex flex-col md:flex-row items-center">
-          <div className="max-w-4xl space-y-6 sm:space-y-8 md:w-1/2">
+      <div className="relative z-10 flex items-center justify-center min-h-screen">
+        <div className="container mx-auto px-4 sm:px-10">
+          <div className="max-w-4xl space-y-6 sm:space-y-8">
             <div className="pb-40 sm:pb-0">
               {/* Títulos ajustados para móviles */}
-              <h1 className="text-6xl sm:text-5xl md:text-5xl lg:text-7xl font-light leading-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              <h1 className="text-6xl sm:text-5xl md:text-5xl lg:text-7xl font-light leading-tight text-white">
                 Un adios
               </h1>
-              <h2 className="text-6xl sm:text-5xl md:text-5xl lg:text-[4.5vw] font-bold leading-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              <h2 className="text-6xl sm:text-5xl md:text-5xl lg:text-[4.5vw] font-bold leading-tight text-white">
                 lleno de amor.
               </h2>
               {/* Párrafo ajustado */}
-              <p className="text-lg sm:text-xl md:text-xl lg:text-[1.5vw] text-gray-300 max-w-2xl">
+              <p className="text-lg sm:text-xl md:text-xl lg:text-[1.5vw] text-white max-w-2xl">
                 Te ofrecemos un servicio de entierro en casa, para que puedas
                 despedir a tu mascota de la mejor manera
               </p>

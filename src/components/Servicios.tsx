@@ -19,7 +19,7 @@ const highlights = [
 const Servicios = () => {
   return (
     <section
-      className="h-[130vh] sm:h-[80vh] pt-20 bg-white flex justify-center px-4 sm:px-8 mb-10"
+      className="h-[160vh] sm:h-[80vh] pt-20 bg-white flex justify-center px-8 sm:px-8 mb-10 "
       id="servicios"
     >
       <div className="text-center w-full sm:w-[90vw] md:w-[70vw]">
@@ -29,7 +29,7 @@ const Servicios = () => {
         </h2>
 
         {/* Subtítulo */}
-        <h3 className="text-[18px] text-left sm:text-center sm:text-[25px] mx-4 sm:mx-20 font-light leading-relaxed">
+        <h3 className="text-[22px] text-left sm:text-center sm:text-[25px] mx-4 sm:mx-16 font-light leading-relaxed">
           Queremos que este momento sea tranquilo para vos. Llevamos un ataúd
           según el tamaño de tu mascota y cavamos el pozo en tu jardín. Rápido,
           simple y sin que tengas que preocuparte por nada.

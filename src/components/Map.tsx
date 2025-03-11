@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const GoogleMapComponent = () => {
   return (
-    <div className="text-center h-[130vh] pt-16 my-6 sm:my-10 px-4">
+    <div className="text-center h-[130vh] sm:h-[100vh] pt-16 my-6 sm:my-10 px-8">
       <h2 className="text-3xl text-left sm:text-center sm:text-3xl font-bold text-gray-800 mb-4 sm:mb-6">
         Cerca tuyo cuando más nos necesitás
       </h2>
@@ -18,7 +18,7 @@ const GoogleMapComponent = () => {
         </div>
       </div>
 
-      <h3 className="text-xl text-left sm:text-center sm:text-[1.5rem] text-gray-600 mt-4 sm:mt-6 mx-auto sm:mx-80">
+      <h3 className="text-[22px] text-left sm:text-center sm:text-[1.5rem]  mt-4 sm:mt-6 mx-auto sm:mx-80">
         Nuestra base está en Buenos Aires, lo que nos permite llegar a tu hogar
         de manera rápida y eficiente. En este momento difícil, nos encargamos de
         todo para que no tengas que preocuparte por nada.

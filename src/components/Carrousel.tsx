@@ -73,7 +73,7 @@ export default function VerticalCarousel() {
         <div className="absolute sm:top-2 sm:left-2 text-white px-2 py-1 rounded font-bold text-sm sm:text-base">
           {slides[currentIndex].id}
         </div>
-        <p className="text-[24px] sm:text-[30px] px-4 sm:px-0 leading-relaxed w-full sm:w-90 mt-10 sm:mt-[6vh]">
+        <p className="text-[22px] sm:text-[30px] px-4 sm:px-0 leading-relaxed w-full sm:w-90 mt-10 sm:mt-[6vh]">
           {slides[currentIndex].text}
         </p>{" "}
       </motion.div>
