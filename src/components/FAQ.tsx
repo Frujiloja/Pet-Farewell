@@ -51,7 +51,7 @@ const FAQ = () => {
         <h2 className="text-4xl font-bold text-center mb-16">
           Preguntas Frecuentes
         </h2>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible>
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
