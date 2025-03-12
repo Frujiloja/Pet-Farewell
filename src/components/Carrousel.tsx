@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const slides = [
   {
@@ -21,7 +20,7 @@ const slides = [
     id: 3,
     text: "Si lo deseas, te guiamos en una despedida simbólica para honrar la vida de tu mascota",
     image:
-      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1739893234/premium_photo-1668091148044-056cd744e64a_1_seby6k.png",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1741802235/beautiful-dusk-light-colorful-beauty_1_n7lxps.png",
     bgColor: "bg-[#FCBD85]",
   },
   {
@@ -33,7 +32,7 @@ const slides = [
   },
 ];
 
-export default function VerticalCarousel() {
+export default function HorizontalCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -43,69 +42,57 @@ export default function VerticalCarousel() {
     return () => clearInterval(interval);
   }, []);
 
-  // Función para avanzar a la siguiente diapositiva
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  };
-
-  // Función para retroceder a la diapositiva anterior
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  };
-
   return (
     <div className="relative w-full h-[60vh] sm:h-[80vh] overflow-hidden flex items-center justify-center">
-      {/* Fondo de la imagen */}
-      <div
-        className="absolute inset-0 bg-cover bg-center transition-all duration-500"
-        style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
-      ></div>
-
-      {/* Contenido del slide */}
+      {/* Contenedor de las diapositivas */}
       <motion.div
-        key={currentIndex}
-        initial={{ y: "100%", opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        exit={{ y: "-100%", opacity: 0 }}
+        className="flex w-full h-full"
+        animate={{ x: `-${currentIndex * 100}%` }}
         transition={{ duration: 0.8 }}
-        className={`relative z-10 ${slides[currentIndex].bgColor} text-white p-4 sm:p-6 rounded-xl w-4/5 sm:w-[40vw] h-[30vh] sm:h-[30vh] text-center flex justify-center`}
       >
-        <div className="absolute sm:top-2 sm:left-2 text-white px-2 py-1 rounded font-bold text-sm sm:text-base">
-          {slides[currentIndex].id}
-        </div>
-        <p className="text-[22px] sm:text-[30px] px-4 sm:px-0 leading-relaxed w-full sm:w-90 mt-10 sm:mt-[6vh]">
-          {slides[currentIndex].text}
-        </p>{" "}
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className="w-full h-full flex-shrink-0 bg-cover bg-center relative"
+            style={{ backgroundImage: `url(${slide.image})` }}
+          >
+            {/* Difuminado en el margen inferior */}
+            <div className="absolute bottom-0 left-0 w-full h-[70%] bg-gradient-to-t from-black to-transparent"></div>
+
+            {/* Contenido del slide */}
+            <div className="relative z-10 text-white p-4 sm:p-6 rounded-xl w-4/5 sm:w-[50vw] h-full flex flex-col sm:flex-row justify-center items-center mx-auto">
+              {/* Número grande */}
+              <div className="text-[30px] sm:text-[180px] font-bold text-white mb-4 sm:mb-0 sm:mr-4">
+                {index + 1}
+              </div>
+              {/* Contenedor del texto */}
+              <div className="text-center sm:text-left">
+                {/* Título estático */}
+                <h2 className="text-[16px] sm:text-[26px] font-thin mb-4">
+                  La ceremonia: paso a paso
+                </h2>
+                {/* Texto dinámico */}
+                <p className="text-[28px] sm:text-[36px] font-bold leading-relaxed">
+                  {slide.text}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
       </motion.div>
 
-      {/* Botón para retroceder (flecha hacia arriba) */}
-      <button
-          onClick={prevSlide}
-          className="absolute top-[10%] left-1/2 transform -translate-x-1/2 bg-transparent border-4 border-yellow-500 text-yellow-500 p-2 rounded-full hover:bg-yellow-500 hover:text-white transition"
-        >
-          <ChevronUpIcon className="w-10 h-10" /> {/* Ícono de flecha hacia arriba */}
-        </button>
-
-      {/* Indicadores de navegación */}
-      <div className="absolute right-2 sm:right-5 flex flex-col gap-2 top-1/2 transform -translate-y-1/2">
+      {/* Indicadores de navegación (dots) */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all ${
+            className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all ${
               index === currentIndex ? "bg-yellow-500" : "bg-white"
             }`}
             onClick={() => setCurrentIndex(index)}
           />
         ))}
       </div>
-
-      {/* Botón para avanzar (flecha hacia abajo) */}
-      <button
-        onClick={nextSlide}
-        className="absolute bottom-[10%] left-1/2 transform -translate-x-1/2 bg-transparent border-4 border-yellow-500 text-yellow-500 p-2 rounded-full hover:bg-yellow-500 hover:text-white transition"
-      >
-        <ChevronDownIcon className="w-10 h-10" /> {/* Ícono de flecha hacia abajo */}
-      </button>
     </div>
   );
 }

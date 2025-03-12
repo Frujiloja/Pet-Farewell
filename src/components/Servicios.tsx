@@ -19,7 +19,7 @@ const highlights = [
 const Servicios = () => {
   return (
     <section
-      className="h-[160vh] sm:h-[80vh] pt-20 bg-white flex justify-center px-8 sm:px-8 mb-10 "
+      className="pt-20 bg-white flex justify-center px-8 sm:px-8 mb-10"
       id="servicios"
     >
       <div className="text-center w-full sm:w-[90vw] md:w-[70vw]">

@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 
 const Partners = () => {
   return (
-    <section className="sm:flex flex-col h-[70vh] items-center justify-center py-20 bg-muted sm:text-center p-8">
+    <section className="sm:flex flex-col items-center justify-center py-20 bg-muted sm:text-center p-8">
       <div className="container mx-auto px-4">
-      <h2 className="text-4xl md:text-4xl font-bold mb-8 mx-auto">
+        <h2 className="text-4xl md:text-4xl font-bold mb-8 mx-auto">
           Despedilo con amor, sin complicaciones
         </h2>
         <h3 className="max-w-4xl text-[22px] mx-auto font-light">

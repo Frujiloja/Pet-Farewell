@@ -19,8 +19,8 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="#home" className="text-2xl font-bold text-primary">
               <img
-                src="/LogoPawwer.png"
-                alt="Logo Pawwer"
+                src="/LogoPawwerB.png"
+                alt="Entierro Mascotas Gato Perro"
                 className="h-[4vh] sm:h-[4vh]"
               />
             </a>
@@ -29,25 +29,25 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#servicios"
-              className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105 text-xl"
+              className="text-[#ffffff] hover:text-[#2c2c2c] transition-transform transform hover:scale-105 text-xl"
             >
               Servicios
             </a>
             <a
               href="#collage"
-              className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105  text-xl"
+              className="text-[#ffffff] hover:text-[#2c2c2c] transition-transform transform hover:scale-105  text-xl"
             >
               Producto
             </a>
             <a
               href="#sumate"
-              className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105  text-xl"
+              className="text-[#ffffff] hover:text-[#2c2c2c] transition-transform transform hover:scale-105  text-xl"
             >
               Súmate al equipo
             </a>
             <a
               href="#faq"
-              className="text-[#000000] hover:text-[#2c2c2c] transition-transform transform hover:scale-105 text-xl"
+              className="text-[#ffffff] hover:text-[#2c2c2c] transition-transform transform hover:scale-105 text-xl"
             >
               Preguntas
             </a>
