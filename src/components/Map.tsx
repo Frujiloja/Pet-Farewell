@@ -18,14 +18,13 @@ const GoogleMapComponent = () => {
       </div>
 
       <h3 className="text-[22px] text-left sm:text-center sm:text-[1.5rem] mt-4 sm:mt-6 mx-auto sm:mx-80">
-        Nuestra base está en Buenos Aires, lo que nos permite llegar a tu hogar
-        de manera rápida y eficiente. En este momento difícil, nos encargamos de
+        Nuestra base está en Pilar, lo que nos permite brindarte un servicio ágil y confiable. En este momento difícil, nos encargamos de
         todo para que no tengas que preocuparte por nada.
       </h3>
       <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6 sm:pt-8 mb-10">
         <a
-          href="https://wa.me/+541168961470"
-          target="_blank"
+              href="https://wa.link/ikj9yv"
+              target="_blank"
           rel="noopener noreferrer"
         >
           <Button

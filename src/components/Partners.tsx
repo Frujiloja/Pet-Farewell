@@ -15,8 +15,8 @@ const Partners = () => {
       </div>
       <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
         <a
-          href="https://wa.me/+541168961470"
-          target="_blank"
+              href="https://wa.link/ikj9yv"
+              target="_blank"
           rel="noopener noreferrer"
         >
           <Button

@@ -16,17 +16,17 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#servicios" className="text-gray-200 hover:text-white">
+                <a href="#collage" className="text-gray-200 hover:text-white">
                   Producto
                 </a>
               </li>
               <li>
-                <a href="#servicios" className="text-gray-200 hover:text-white">
+                <a href="#sumate" className="text-gray-200 hover:text-white">
                   Sumate al equipo
                 </a>
               </li>
               <li>
-                <a href="#servicios" className="text-gray-200 hover:text-white">
+                <a href="#faq" className="text-gray-200 hover:text-white">
                   Preguntas
                 </a>
               </li>

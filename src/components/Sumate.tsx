@@ -49,7 +49,7 @@ const Sumate = () => {
           ))}
         </div>
         <a
-          href="https://wa.me/+541168961470"
+          href="https://wa.link/ikj9yv"
           target="_blank"
           rel="noopener noreferrer"
         >

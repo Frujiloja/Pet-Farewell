@@ -51,6 +51,11 @@ const Navbar = () => {
             >
               Preguntas
             </a>
+            <a
+              href="https://wa.link/ikj9yv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <Button
               variant="default"
               size="lg"
@@ -58,6 +63,7 @@ const Navbar = () => {
             >
               Contactanos
             </Button>
+            </a>
           </div>
 
           <div className="md:hidden flex items-center pr-4">

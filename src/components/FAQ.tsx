@@ -7,7 +7,7 @@ import {
 
 const faqs = [
   {
-    question: "¿Qué es Pawwner y qué servicios ofrece para mascotas?",
+    question: "¿Qué es Pawwer y qué servicios ofrece para mascotas?",
     answer: "Pawwner ofrece un servicio de entierro para mascotas, brindando una despedida digna. Llevamos un ataúd ecológico a tu hogar, cavamos la tumba en tu jardín y te damos un instructivo con una ceremonia opcional, además de una semilla para plantar un árbol en su honor",
   },
   {

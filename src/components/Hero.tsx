@@ -28,19 +28,19 @@ const Hero = () => {
     ],
     desktop: [
       {
-        url: "https://res.cloudinary.com/dwxa2fewv/image/upload/v1741802234/Entierros_perros_facil_sj1hld.jpg",
+        url: "https://res.cloudinary.com/dwxa2fewv/image/upload/v1742497143/Entierros_perros_facil_sj1hld_uli5u2.jpg",
         alt: "Imagen escritorio 1 - Entierro Mascotas",
       },
       {
-        url: "https://res.cloudinary.com/dwxa2fewv/image/upload/v1741802244/ataud_perros_xegkit.jpg",
+        url: "https://res.cloudinary.com/dwxa2fewv/image/upload/v1742497143/ataud_perros_xegkit_hmea3z.jpg",
         alt: "Imagen escritorio 2 - Entierro Mascotas",
       },
       {
-        url: "https://res.cloudinary.com/dwxa2fewv/image/upload/v1741803146/Entierros_mascotas_1_zic5nf.png",
+        url: "https://res.cloudinary.com/dwxa2fewv/image/upload/v1742497143/Entierros_mascotas_1_zic5nf_vozh3p.png",
         alt: "Imagen escritorio 3 - Entierro Mascotas",
       },
       {
-        url: "https://res.cloudinary.com/dwxa2fewv/image/upload/v1741802245/Muerte_mascota_caba_oyquft.jpg",
+        url: "https://res.cloudinary.com/dwxa2fewv/image/upload/v1742497143/Muerte_mascota_caba_oyquft_fk20d8.jpg",
         alt: "Imagen escritorio 4 - Entierro Mascotas",
       },
     ],
@@ -113,7 +113,7 @@ return (
           {/* Botón ajustado */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-6 sm:pt-8">
             <a
-              href="https://wa.me/+541168961470"
+              href="https://wa.link/ikj9yv"
               target="_blank"
               rel="noopener noreferrer"
             >

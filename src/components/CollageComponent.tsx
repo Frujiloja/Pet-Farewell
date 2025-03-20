@@ -1,12 +1,13 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import { useSwipeable } from "react-swipeable"; // Importamos el controlador de gestos
 
 const CollageComponent = () => {
   const images = [
-    "https://res.cloudinary.com/dwxa2fewv/image/upload/v1739558891/Mask_group_dkgy6s.png",
-    "https://res.cloudinary.com/dwxa2fewv/image/upload/v1739558891/Mask_group_dkgy6s.png",
-    "https://res.cloudinary.com/dwxa2fewv/image/upload/v1739558891/Mask_group_dkgy6s.png",
+    "https://res.cloudinary.com/dwxa2fewv/image/upload/v1742498014/caja_entierro_mascota_3_d61gpe.jpg",
+    "https://res.cloudinary.com/dwxa2fewv/image/upload/v1742498014/caja_entierro_mascota_1_sy05le.jpg",
+    "https://res.cloudinary.com/dwxa2fewv/image/upload/v1742498014/caja_entierro_mascota_2_r6qkcc.jpg",
   ];
 
   const [currentIndex, setCurrentIndex] = React.useState(0);
@@ -20,6 +21,13 @@ const CollageComponent = () => {
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
+
+  const handlers = useSwipeable({
+    onSwipedLeft: nextSlide, // Deslizar a la izquierda
+    onSwipedRight: prevSlide, // Deslizar a la derecha
+    trackTouch: true, // Habilitar seguimiento táctil
+    trackMouse: false, // Deshabilitar seguimiento del mouse
+  });
 
   return (
     <section className="w-full sm:text-center p-8 pt-40" id="collage">
@@ -36,7 +44,10 @@ const CollageComponent = () => {
       </div>
 
       {/* Carrusel para dispositivos móviles con framer-motion */}
-      <div className="sm:hidden relative overflow-hidden">
+      <div
+        {...handlers} // Agregamos los controladores de gestos al contenedor principal
+        className="sm:hidden relative overflow-hidden"
+      >
         <div className="relative w-full h-auto">
           <AnimatePresence>
             <motion.img
@@ -84,32 +95,34 @@ const CollageComponent = () => {
       </div>
 
       {/* Galería para pantallas más grandes */}
-      <div className="hidden sm:grid grid-cols-2 gap-4 px-60 pt-10">
-        <div className="space-y-4">
+      <div className="hidden sm:grid grid-cols-2 gap-4 px-40 pt-6">
+        {/* Primera imagen grande */}
+        <div className="row-span-2">
           <img
-            className="w-full h-auto object-cover rounded-lg"
-            src="https://res.cloudinary.com/dwxa2fewv/image/upload/v1739558891/Mask_group_2_wbzvo9.png"
-            alt="Imagen 1"
-          />
-          <img
-            className="w-full h-auto object-cover rounded-lg"
-            src="https://res.cloudinary.com/dwxa2fewv/image/upload/v1739558891/Mask_group_1_v4husb.png"
-            alt="Imagen 2"
+            className="w-full h-[617px] object-cover rounded-lg"
+            src="https://res.cloudinary.com/dwxa2fewv/image/upload/v1742498014/caja_entierro_mascota_1_sy05le.jpg"
+            alt="Entierro Mascota"
           />
         </div>
 
-        <div>
+        {/* Dos imágenes más pequeñas */}
+        <div className="grid grid-rows-2 gap-4">
           <img
-            className="w-full h-auto object-cover rounded-lg"
-            src="https://res.cloudinary.com/dwxa2fewv/image/upload/v1739558891/Mask_group_dkgy6s.png"
-            alt="Imagen 3"
+            className="w-full h-[300px] object-cover rounded-lg"
+            src="https://res.cloudinary.com/dwxa2fewv/image/upload/v1742498014/caja_entierro_mascota_3_d61gpe.jpg"
+            alt="Entierro Mascota"
+          />
+          <img
+            className="w-full h-[300px] object-cover rounded-lg"
+            src="https://res.cloudinary.com/dwxa2fewv/image/upload/v1742498014/caja_entierro_mascota_2_r6qkcc.jpg"
+            alt="Entierro Mascota"
           />
         </div>
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center pt-16">
         <a
-          href="https://wa.me/+541168961470"
+          href="https://wa.link/ikj9yv"
           target="_blank"
           rel="noopener noreferrer"
         >

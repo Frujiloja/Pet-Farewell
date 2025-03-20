@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useSwipeable } from "react-swipeable"; // Importamos el controlador de gestos
 
 const slides = [
   {
@@ -25,7 +26,7 @@ const slides = [
   },
   {
     id: 4,
-    text: "Te llevamos una semilla para que tu mascota se vuelva eterno",
+    text: "Te llevamos una semilla para que tu mascota se vuelva eterna",
     image:
       "https://res.cloudinary.com/dwxa2fewv/image/upload/v1739893233/freepik__expand__6923_1_yry6ua.png",
     bgColor: "bg-[#7DA600]",
@@ -35,6 +36,7 @@ const slides = [
 export default function HorizontalCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Cambiar automáticamente las diapositivas cada 5 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
@@ -42,8 +44,19 @@ export default function HorizontalCarousel() {
     return () => clearInterval(interval);
   }, []);
 
+  // Controlador de gestos para manejar el deslizamiento
+  const handlers = useSwipeable({
+    onSwipedLeft: () => setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1)), // Deslizar a la izquierda
+    onSwipedRight: () => setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1)), // Deslizar a la derecha
+    trackTouch: true, // Habilitar seguimiento táctil
+    trackMouse: false, // Deshabilitar seguimiento del mouse
+  });
+
   return (
-    <div className="relative w-full h-[60vh] sm:h-[80vh] overflow-hidden flex items-center justify-center">
+    <div
+      {...handlers} // Agregamos los controladores de gestos al contenedor principal
+      className="relative w-full h-[60vh] sm:h-[80vh] overflow-hidden flex items-center justify-center"
+    >
       {/* Contenedor de las diapositivas */}
       <motion.div
         className="flex w-full h-full"
